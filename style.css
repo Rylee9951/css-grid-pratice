@@ -1,0 +1,74 @@
+html {box-sizing:border-box;}
+*,* :after, *:before {box-sizing:inherit;}
+body{
+  background: url('./assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+
+}
+.grid{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 326px 326px 326px;
+  grid-template-rows: auto;
+  grid-column-gap:10px;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+  "one two three"
+  "four four three";
+  width: 1000px;
+  height: 400px;
+  color: white;
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.one{
+  grid-area:one;
+  background: blue;
+  border: 4px solid white;
+  background: url('./assets/sk8er-4.png');
+  background-repeat: no-repeat;
+  background-size: 362px 205px;
+  background-position: -38px 0px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.two{
+  grid-area:two;
+  background: red;
+  border: 4px solid white;
+  background: url('./assets/sk8er-3.png');
+  background-repeat: no-repeat;
+  background-size: 359px 210px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.three{
+  grid-area:three;
+  background: purple;
+  border: 4px solid white;
+  background: url('./assets/sk8er-2.png');
+  background-repeat: no-repeat;
+  background-size: 759px 418px;
+  background-position: -349px -5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  
+}
+.four{
+  grid-area:four;
+  background: green;
+  border: 4px solid white;
+  background: url('./assets/sk8er-1.png');
+  background-repeat: no-repeat;
+  background-size: 717px 279px;
+  background-position: 2px -66px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
